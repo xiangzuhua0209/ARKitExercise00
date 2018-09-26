@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="I3a-5D-dTF"/>
+                        <viewControllerLayoutGuide type="bottom" id="4XK-dI-as3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tuO-T5-A6n">
+                                <rect key="frame" x="100" y="30" width="175" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="ei0-lH-FXP"/>
+                                </constraints>
+                                <state key="normal" title="飞机"/>
+                                <connections>
+                                    <action selector="addPlanAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AYq-Se-UFa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9z-fb-8g6">
+                                <rect key="frame" x="100" y="188" width="175" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="Rdj-La-8QE"/>
+                                </constraints>
+                                <state key="normal" title="平地捕捉"/>
+                                <connections>
+                                    <action selector="planeCatch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hC3-hy-fYR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSq-Kk-7R7">
+                                <rect key="frame" x="100" y="109" width="175" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="JCc-ud-2MV"/>
+                                </constraints>
+                                <state key="normal" title="椅子"/>
+                                <connections>
+                                    <action selector="addChairAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r5x-d5-Ib8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WdC-Zd-aoM">
+                                <rect key="frame" x="100" y="267" width="175" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="Alm-b3-FQR"/>
+                                </constraints>
+                                <state key="normal" title="移动飞机"/>
+                                <connections>
+                                    <action selector="planMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8yD-EM-u5e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXk-ur-mWE">
+                                <rect key="frame" x="100" y="346" width="175" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="dxU-Vd-QXq"/>
+                                </constraints>
+                                <state key="normal" title="旋转"/>
+                                <connections>
+                                    <action selector="revolution:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I4h-5Y-5tC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zjH-Oy-t7v">
+                                <rect key="frame" x="36" y="425" width="60" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="4T5-aj-Tjv"/>
+                                    <constraint firstAttribute="height" constant="44" id="yYF-8b-Mi7"/>
+                                </constraints>
+                                <state key="normal" title="扫福字"/>
+                                <connections>
+                                    <action selector="fuCatch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Ml-7d-z2c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHl-C7-sMc">
+                                <rect key="frame" x="279" y="425" width="60" height="44"/>
+                                <state key="normal" title="太阳系"/>
+                                <connections>
+                                    <action selector="SolarSystem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WAM-nL-rLc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="f9z-fb-8g6" firstAttribute="top" secondItem="sSq-Kk-7R7" secondAttribute="bottom" constant="30" id="7NG-c3-NwR"/>
+                            <constraint firstAttribute="trailing" secondItem="WdC-Zd-aoM" secondAttribute="trailing" constant="100" id="94e-LP-0lK"/>
+                            <constraint firstItem="sSq-Kk-7R7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="100" id="A5E-Xk-dnG"/>
+                            <constraint firstItem="FHl-C7-sMc" firstAttribute="height" secondItem="zjH-Oy-t7v" secondAttribute="height" id="Acr-v2-Utr"/>
+                            <constraint firstItem="FHl-C7-sMc" firstAttribute="width" secondItem="zjH-Oy-t7v" secondAttribute="width" id="Ge1-1L-fd8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FHl-C7-sMc" secondAttribute="trailing" constant="20" id="MVW-Dm-h1g"/>
+                            <constraint firstItem="tuO-T5-A6n" firstAttribute="top" secondItem="I3a-5D-dTF" secondAttribute="bottom" constant="10" id="OiW-Ou-qVf"/>
+                            <constraint firstAttribute="trailing" secondItem="tuO-T5-A6n" secondAttribute="trailing" constant="100" id="TPY-ir-v5D"/>
+                            <constraint firstItem="zjH-Oy-t7v" firstAttribute="top" secondItem="rXk-ur-mWE" secondAttribute="bottom" constant="30" id="ZHQ-c1-8Nh"/>
+                            <constraint firstItem="rXk-ur-mWE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="100" id="ZId-Zc-q7r"/>
+                            <constraint firstItem="rXk-ur-mWE" firstAttribute="top" secondItem="WdC-Zd-aoM" secondAttribute="bottom" constant="30" id="a4B-lo-X7d"/>
+                            <constraint firstAttribute="trailing" secondItem="rXk-ur-mWE" secondAttribute="trailing" constant="100" id="bl5-0h-dc6"/>
+                            <constraint firstAttribute="trailing" secondItem="f9z-fb-8g6" secondAttribute="trailing" constant="100" id="bsH-di-hUp"/>
+                            <constraint firstItem="WdC-Zd-aoM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="100" id="hZD-2j-DDB"/>
+                            <constraint firstItem="f9z-fb-8g6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="100" id="hnt-1b-Zpo"/>
+                            <constraint firstItem="tuO-T5-A6n" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="100" id="mKR-si-SYs"/>
+                            <constraint firstAttribute="trailing" secondItem="sSq-Kk-7R7" secondAttribute="trailing" constant="100" id="p8o-sq-NxD"/>
+                            <constraint firstItem="FHl-C7-sMc" firstAttribute="top" secondItem="zjH-Oy-t7v" secondAttribute="top" id="tEc-oG-w6X"/>
+                            <constraint firstItem="WdC-Zd-aoM" firstAttribute="top" secondItem="f9z-fb-8g6" secondAttribute="bottom" constant="30" id="uDQ-4z-uBx"/>
+                            <constraint firstItem="sSq-Kk-7R7" firstAttribute="top" secondItem="tuO-T5-A6n" secondAttribute="bottom" constant="30" id="uMX-VN-0BP"/>
+                            <constraint firstItem="zjH-Oy-t7v" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="y6X-x3-Xt5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
